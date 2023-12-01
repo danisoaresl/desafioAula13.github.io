@@ -1,0 +1,95 @@
+html{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+.header_logo{
+    width: 90px;
+    height: auto:
+}
+
+.header_nav{
+    background-color: black;
+    display: none;
+}     
+
+.header_nav.show{
+    display: block;
+}
+
+ul{
+    margin:0;
+}
+
+#hamburguer{
+    background-color: rgb(194, 100, 100);
+    color: rgb(42, 34, 34);
+    display: block;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    
+}
+
+.header_nav a{
+    color: orange;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, orange, green 50%);
+   color:  rgb(42, 34, 34);
+}
+@media screen and (min-width: 768px){
+    #hamburguer{
+        display: none;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:  rgb(42, 34, 34);
+    }
+
+    .header_logo{
+        margin-left: 5px;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 5px;
+        font-size: 10px;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+    .header_nav a:hover{
+        background-color: orange;
+        color: white;
+    }
+
+    }
