@@ -125,9 +125,42 @@ footer{
         background-color: orange;
         color: white;
     }
-    .logos_footer{
-        flex-direction: row;
-        margin-left: 49rem;
+  
+    #hamburguer{
+        display: none;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightcoral;
     }
 
+    .header_logo{
+        margin-left: 5px;
     }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 5px;
+        font-size: 10px;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+    .header_nav a:hover{
+        background-color: orange;
+        color: white;
+
+    }
+
+    
