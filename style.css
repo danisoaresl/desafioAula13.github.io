@@ -1,4 +1,6 @@
 html{
+    line-height: 2rem;
+    -webkit-text-size-adjust: 100%;
     font-family: sans-serif;
 }
 
@@ -40,8 +42,7 @@ ul{
     padding: 0;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 .header_nav a{
@@ -64,16 +65,21 @@ ul{
     height: 100vh;
 }
 
+section{
+    display: block;
+}
+
 footer{
     background-color: lightcoral;
-    padding: 1rem;
-    text-align: center;
+    align-items: center;
 }
 
 .logos_footer{
-    display: flex;
-    flex-direction: column;
+    display: block;
+    flex-direction:row;
     gap: 1rem;
+    text-align: center;
+    justify-content: center;  
 }
 
 .tamanho{
@@ -87,7 +93,9 @@ footer{
     margin: 0;
     padding-top: 2rem;
     color: black;
+    text-align: center;
 }
+
 
 @media screen and (min-width: 768px){
     #hamburguer{
@@ -134,7 +142,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: lightcoral;
+        background-color: black;
     }
 
     .header_logo{
@@ -162,5 +170,12 @@ footer{
         color: white;
 
     }
+    .logos_footer{
+        display: flex;
+        text-align: center;
+    }
 
-    
+    .texto_footer{
+        text-align: center;
+    }
+}
