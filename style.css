@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 html{
     line-height: 2rem;
     -webkit-text-size-adjust: 100%;
@@ -7,11 +11,13 @@ html{
 .header{
     text-align: center;
     margin: auto;
+    padding: 0;
+    background-color: black; 
 }
 
 .header_logo{
     width: 90px;
-    height: auto:
+    height: auto;
 }
 
 .header_nav{
@@ -28,13 +34,13 @@ ul{
 }
 
 #hamburguer{
-    background-color: rgb(194, 100, 100);
-    color: lightcoral;
+    background-color: lightgreen;
+    color: black;
     display: block;
     text-align: center;
     padding: 3px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .header_nav ul{
@@ -42,11 +48,11 @@ ul{
     padding: 0;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;   
+    font-size: 10px;   
 }
 
 .header_nav a{
-    color: orange;
+    color: yellow;
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -54,7 +60,6 @@ ul{
 
 .header_nav a:hover{
     background-color: color-mix(in srgb, orange, green 50%);
-    color:  lightcoral;
 }
 
 .fundo_main{
@@ -70,8 +75,9 @@ section{
 }
 
 footer{
-    background-color: lightcoral;
+    background-color: lightgreen;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .logos_footer{
@@ -84,14 +90,17 @@ footer{
 
 .tamanho{
     width: 2rem;
+    margin-top: 15px;
+    padding: 1%;
 }
 
 .texto_footer{
-    font-size: 1rem;
+    font-size: 10px;
     text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.15rem;
     margin: 0;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     color: black;
     text-align: center;
 }
@@ -106,7 +115,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: lightcoral;
+        background-color:black;
     }
 
     .header_logo{
@@ -128,47 +137,11 @@ footer{
 
     .header_nav a{
         border-radius: 5px;
-    }
-    .header_nav a:hover{
-        background-color: orange;
-        color: white;
-    }
-  
-    #hamburguer{
-        display: none;
-    }
-    
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-    }
-
-    .header_logo{
-        margin-left: 5px;
-    }
-
-    .header_nav{
         display: block;
     }
-
-    .header_nav ul{
-        margin-right: 5px;
-        font-size: 10px;
-    }
-
-    .header_nav li{
-        display: inline-block;
-    }
-
-    .header_nav a{
-        border-radius: 5px;
-    }
     .header_nav a:hover{
         background-color: orange;
-        color: white;
-
+        color: black;
     }
     .logos_footer{
         display: flex;
